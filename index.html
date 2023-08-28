@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website Title</title>
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+    <script>
+        function sendOrderToWhatsApp() {
+            // Replace the placeholders with your actual WhatsApp API details
+            var phoneNumber = "YOUR_PHONE_NUMBER";
+            var message = "Order details: ..."; // Add the order details here
+            
+            // Construct the WhatsApp URL
+            var url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(message);
+            
+            // Open the WhatsApp URL in a new tab
+            window.open(url, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Your Website Header</h1>
+        <!-- Add your navigation menu or other header content here -->
+    </header>
+    
+    <main>
+        <h2>Welcome to Your Website</h2>
+        <!-- Add your main content here -->
+        
+        <button onclick="sendOrderToWhatsApp()">Checkout</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <!-- Add your footer content here -->
+    </footer>
+</body>
+</html>
