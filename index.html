@@ -42,7 +42,7 @@
             var orderDetails = "Name: " + name + "\nProduct: " + product + "\nQuantity: " + quantity;
 
             // Send order details to WhatsApp number
-            var whatsappNumber = "+201006972733";
+            var whatsappNumber = "201006972733";
             var whatsappMessage = encodeURIComponent(orderDetails);
             var whatsappLink = "https://api.whatsapp.com/send?phone=" + whatsappNumber + "&text=" + whatsappMessage;
             window.open(whatsappLink);
